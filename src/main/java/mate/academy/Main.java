@@ -38,7 +38,8 @@ public class Main {
                 LocalDateTime.of(2025, 7, 25, 20, 15));
         movieSessionService.add(movieSession);
         System.out.println(movieSessionService.get(movieSession.getId()));
-        movieSessionService.findAvailableSession(1L, LocalDate.of(2025, 7, 25))
+        movieSessionService.findAvailableSession(fastAndFurious.getId(),
+                        LocalDate.of(2025, 7, 25))
                 .forEach(System.out::println);
     }
 }
